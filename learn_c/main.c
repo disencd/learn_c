@@ -10,6 +10,7 @@
 #include "factorial.h"
 #include "fibonacci.h"
 #include "linkedlist.h"
+#include "binary_search.h"
 
 int main(int argc, const char * argv[]) {
     // insert code here...
@@ -19,6 +20,10 @@ int main(int argc, const char * argv[]) {
 //    fact = factorial(5);
 //    printf("Factorial Value is %d\n", fact);
 //    fibonacci(100);
-    list_options();
+//    list_options();
+    int arr[] = {0, 1, 12, 23, 45, 56, 67, 78, 89, 90};
+    int a = 1;
+    a = binary_search(arr, 0, 10, 45);
+    printf("Found 45 at %d \n", a);
     return 0;
 }

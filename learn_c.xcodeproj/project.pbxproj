@@ -11,6 +11,7 @@
 		997760082259489A00FD756A /* factorial.c in Sources */ = {isa = PBXBuildFile; fileRef = 997760072259489A00FD756A /* factorial.c */; };
 		9977600B22596D0300FD756A /* fibonacci.c in Sources */ = {isa = PBXBuildFile; fileRef = 9977600A22596D0300FD756A /* fibonacci.c */; };
 		9977600E2259735C00FD756A /* linkedlist.c in Sources */ = {isa = PBXBuildFile; fileRef = 9977600D2259735C00FD756A /* linkedlist.c */; };
+		997760112259999300FD756A /* binary_search.c in Sources */ = {isa = PBXBuildFile; fileRef = 997760102259999300FD756A /* binary_search.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -34,6 +35,8 @@
 		9977600A22596D0300FD756A /* fibonacci.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = fibonacci.c; sourceTree = "<group>"; };
 		9977600C2259735C00FD756A /* linkedlist.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = linkedlist.h; sourceTree = "<group>"; };
 		9977600D2259735C00FD756A /* linkedlist.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = linkedlist.c; sourceTree = "<group>"; };
+		9977600F2259999300FD756A /* binary_search.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = binary_search.h; sourceTree = "<group>"; };
+		997760102259999300FD756A /* binary_search.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = binary_search.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +76,8 @@
 				997760072259489A00FD756A /* factorial.c */,
 				9977600C2259735C00FD756A /* linkedlist.h */,
 				9977600D2259735C00FD756A /* linkedlist.c */,
+				9977600F2259999300FD756A /* binary_search.h */,
+				997760102259999300FD756A /* binary_search.c */,
 			);
 			path = learn_c;
 			sourceTree = "<group>";
@@ -134,6 +139,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9977600E2259735C00FD756A /* linkedlist.c in Sources */,
+				997760112259999300FD756A /* binary_search.c in Sources */,
 				997760002259480F00FD756A /* main.c in Sources */,
 				9977600B22596D0300FD756A /* fibonacci.c in Sources */,
 				997760082259489A00FD756A /* factorial.c in Sources */,
