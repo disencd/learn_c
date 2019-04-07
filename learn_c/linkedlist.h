@@ -21,6 +21,7 @@ typedef struct LinkedList *node;
 
 int list_options(void);
 node insert_list(node, int);
+void display_list(node);
 
 #endif /* linkedlist_h */
 

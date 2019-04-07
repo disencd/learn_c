@@ -13,13 +13,13 @@ int list_options() {
     char buf[MAX];
     node head = NULL;
     while (1) {
-        printf("\n-------------- Linked List Program --------------\n"
+        printf("\n-------------------------------------------------\n"
+               "-------------- Linked List Program --------------\n"
                "-------------------------------------------------\n"
                "1) Insert\n2) Display\n"
                "Enter your choice :");
         fgets(buf, MAX, stdin);
         choice = atoi(buf);
-//        printf("Options is %d", choice);
         
         switch(choice) {
             case 1:
@@ -27,6 +27,9 @@ int list_options() {
                 fgets(buf, MAX, stdin);
                 num = atoi(buf);
                 head = insert_list(head, num);
+                break;
+            case 2:
+                display_list(head);
                 break;
             default:
                 printf("\nExiting .........\n");
@@ -37,6 +40,14 @@ int list_options() {
     return 0;
 }
 
+void display_list(node head) {
+    node temp = head;
+    while(temp != NULL) {
+        printf("%d -> ", temp->data);
+        temp = temp->next;
+    }
+}
+
 node create_node(int data) {
     node temp;
     temp = (node)malloc(10);
@@ -44,6 +55,7 @@ node create_node(int data) {
     temp->next = NULL;
     return temp;
 }
+
 node insert_list(node head, int num) {
     node temp, new_node;
     new_node = create_node(num);
@@ -53,11 +65,11 @@ node insert_list(node head, int num) {
     } else {
         temp = head;
         while(temp->next != NULL) {
-            printf("%d -> ", temp->data);
             temp = temp->next;
         }
         temp->next = new_node;
     }
     return head;
 }
+
 
